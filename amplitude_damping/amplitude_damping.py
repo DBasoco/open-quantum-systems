@@ -146,7 +146,7 @@ def amplitude_damping_channel_witness_noisy(q, c, sys, env, anc, observable, R, 
         ad.h(sys)
         ad.h(anc)
     elif observable == 'yy':
-        ad.x(sys)
+        ad.x(sys) # random flip gate
         ad.sdg(sys)
         ad.h(sys)
         ad.sdg(anc)
