@@ -13,7 +13,12 @@
 \DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}
   {#1\,\delimsize\vert\,\mathopen{}#2}
 
-\usepackage{biblatex}
+
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
 \addbibresource{report.bib}
 
 \usepackage[hidelinks]{hyperref}
@@ -36,6 +41,8 @@
   No quantum system is perfectly isolated from the environment. The case for the closed quantum systems, where the equation of motion is fully describing the state dynamics is the Schr\"{o}dinger equation. Generally, the dynamics of open quantum systems are described by a master equation, usually Lindbladian. Only under certain assumptions, known as the Born--Markov approximation, one can get an equation in this form able to describe the physical evolution of the quantum states. When these assumptions are not satisfied, we enter the non-Markovian realm. This distinction and breakdown of equations in changing scope illustrates how the open quantum systems theories are far from being completely solved.
 
   We will cover several test beds for experimental research into open quantum systems. These test bed classes include depolarizing and Pauli channels, Markovian reservoir engineering and amplitude damping. These experimental results demonstrate the versatile nature of quantum simulators and how they can be used for verifying and exploration into open quantum physics.
+
+  This work is based on the article "IBM Q Experience as a versatile experimental testbedfor simulating open quantum systems" \cite{openQuantumSystems}.
 
 
   \section{Applications}
