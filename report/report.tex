@@ -36,7 +36,11 @@
   \blindtext
 
   \section{Depolarizing and Pauli Channels}
-  \blindtext
+  The depolarizing channel was examined by first applying it on a stationary state ($\vert\psi_0\rangle = U(\frac{\pi}{4}, \frac{\pi}{4},0)\vert 0\rangle$), with increasing values for $p$ ($p$ being the probability of an error). It was shown that the system was decohering into an $\frac{I}{2}$ state as desired by plotting the real diagonal values and the real and imaginary of one of the off-diagonals. The real of the diagonal values both went to $\frac{1}{2}$ as $p$ increased, and both components of the off-diagonal went to 0, which shows that the state was progressing towards an $\frac{I}{2}$ state as intended. The density matrix was found by using the Qiskit tomography experiment. 
+
+The depolarizing channel was examined further by applying it to an oscillating circuit and time evolving that circuit with increasing decay rates. The expectation value of the $\vert 0 \rangle$ state of the oscillating system was plotted over time. In all cases where the decay rate is greater than 0, the expectation value of $\vert 0 \rangle$ decohered to $\frac{1}{2}$ over time instead of continuing to oscillate, whereas the case where they decay rate was 0, the circuit continued to oscillate between 1 and 0. 
+
+The Pauli Channel was examined by first starting a initializing a system and memory qubit in the Bell State $\vert \psi - \rangle$. The Pauli Channel was added to the circuit affecting the system qubit. This circuit was time evolved so the decoherence could be watched. The rate of decoherence was effected by the values: time, eta, and omega. These three values affect the probabilities of the three Pauli gates, and there are two different methods used to generate the probabilities of the gates from these parameters, the non-CP-divisible map and the eternally non-Markovian. The state of both the system and memory qubits was measured with the Qiskit Experiment Tomography Experiment, and the work extractable was calculated from that state. The extractable work was plotted over time for each of the two methods, which gave us a similar plot to the plot from the reference material.
 
   \section{Markovian Reservoir Engineering}
   \blindtext
